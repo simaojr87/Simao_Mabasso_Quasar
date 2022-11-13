@@ -16,15 +16,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: 'me', name: 'me', component: () => import('src/pages/Me.vue') }
-    ],
-    meta: {
-      requiresAuth: true
-    }
+      { path: 'me', name: 'me', component: () => import('pages/Me.vue') },
+      { path: 'category', name: 'category', component: () => import('pages/category/list.vue') },
+      { path: 'form-category', name: 'form-category', component: () => import('pages/category/Form.vue') }
+    ]
+
   },
 
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')

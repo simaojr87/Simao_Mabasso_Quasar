@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-         simao mabasso
+          Estoque Super Mercado Junior
         </q-toolbar-title>
 
         <dark-mode-toogle />
